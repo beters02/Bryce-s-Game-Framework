@@ -11,4 +11,15 @@ local Gamemode = require(script.Gamemode)
 
 local Framework = {}
 
+Framework.Signal = Signal
+Framework.Timer = Timer
+Framework.Gamemode = Gamemode
+
+function Framework.init()
+    Gamemode.SetGamemode("Lobby")
+    Gamemode.StartGame()
+end
+
+Framework.init()
+
 return Framework
