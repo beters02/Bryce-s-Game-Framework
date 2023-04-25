@@ -1,0 +1,24 @@
+{
+  "name": "BrycesGamework",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$path": "src/ReplicatedStorage",
+      "$ignoreUnknownInstances": true
+    },
+
+    "ServerScriptService": {
+      "$path": "src/ServerScriptService",
+      "$ignoreUnknownInstances": true
+    },
+
+    "StarterPlayer": {
+      "StarterCharacterScripts": {
+        "$path": "src/StarterCharacterScripts",
+        "$ignoreUnknownInstances": true
+      }
+    }
+
+  }
+}
