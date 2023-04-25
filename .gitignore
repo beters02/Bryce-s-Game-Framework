@@ -6,5 +6,5 @@
 /*.rbxl.lock
 
 # Tools and Json
-/aftman.toml
-/default.project.json
+aftman.toml
+default.project.json
