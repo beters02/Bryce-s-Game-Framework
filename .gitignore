@@ -6,5 +6,5 @@
 /*.rbxl.lock
 
 # Tools and Json
-/BrycesGamework.aftman.toml
-/BrycesGamework.default.project.json
+/aftman.toml
+/default.project.json
