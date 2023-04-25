@@ -4,3 +4,7 @@
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
+
+# Tools and Json
+/BrycesGamework.aftman.toml
+/BrycesGamework.default.project.json
