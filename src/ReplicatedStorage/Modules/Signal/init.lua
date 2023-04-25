@@ -40,6 +40,10 @@ function Signal.CreateSignal()
         t._currentRunArguments = table.pack(...)
     end
     
+    t.Destroy = function()
+        Signal._setSignalFromID(t._id, nil)
+    end
+
     table.insert(Signal._stored, t)
 
     return t
@@ -59,6 +63,16 @@ function Signal._getSignalFromID(id: number)
     return false
 end
 
+function Signal._setSignalFromID(id: number, new)
+    for i, v in pairs(Signal._stored) do
+        if v.id == id then
+            v = new
+            return v
+        end
+    end
+    return false
+end
+
 function Signal._update()
     for i, signal in pairs(Signal._stored) do
         if signal._connected and signal._execute then
@@ -72,6 +86,10 @@ end
 
 --#endregion
 
-RunService.Heartbeat:Connect(Signal._update)
+if RunService:IsServer() then
+    RunService.Heartbeat:Connect(Signal._update)
+elseif RunService:IsClient() then
+    RunService.RenderStepped:Connect(Signal._update)
+end
 
 return Signal
