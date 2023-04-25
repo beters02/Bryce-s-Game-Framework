@@ -7,6 +7,7 @@
     Start a Game:
 
     In a script,
+    Call Gamemode.SetGamemode(gamemodeName)
     then Gamemode.StartGame()
 
 ]]
