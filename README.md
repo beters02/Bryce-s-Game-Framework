@@ -1,6 +1,6 @@
 # Bryces Game Framework
 
-**_The main intention of Gamework is to have a public access game framework that allows developers to have access to easy-to-use tools to create games on Roblox with._**
+**_The main intention of this framework is to have a public access game framework that allows developers to have access to easy-to-use tools to create games on Roblox with._**
 
 ### Features
 ----
